@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/DEVELOP/PracticaCPlusPlus/Cgame/JuegoCplusplus/main.cpp
+iostream
+-
+src/header/GameMap.h
+D:/DEVELOP/PracticaCPlusPlus/Cgame/JuegoCplusplus/src/header/GameMap.h
+src/header/Player.h
+D:/DEVELOP/PracticaCPlusPlus/Cgame/JuegoCplusplus/src/header/Player.h
+src/header/MapCell.h
+D:/DEVELOP/PracticaCPlusPlus/Cgame/JuegoCplusplus/src/header/MapCell.h
+
+D:/DEVELOP/PracticaCPlusPlus/Cgame/JuegoCplusplus/src/GameMap.cpp
+header/GameMap.h
+D:/DEVELOP/PracticaCPlusPlus/Cgame/JuegoCplusplus/src/header/GameMap.h
+iostream
+-
+
+D:/DEVELOP/PracticaCPlusPlus/Cgame/JuegoCplusplus/src/header/GameMap.h
+iostream
+-
+MapCell.h
+D:/DEVELOP/PracticaCPlusPlus/Cgame/JuegoCplusplus/src/header/MapCell.h
+
+D:/DEVELOP/PracticaCPlusPlus/Cgame/JuegoCplusplus/src/header/MapCell.h
+iostream
+-
+
+D:/DEVELOP/PracticaCPlusPlus/Cgame/JuegoCplusplus/src/header/Player.h
+iostream
+-
+
