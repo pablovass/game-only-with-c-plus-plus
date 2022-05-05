@@ -6,7 +6,12 @@
 
 class GameMap {
 public:
-    MapCell cell [15][10];
+    MapCell* PlayerCell;
+    MapCell cells [15][10];
+     GameMap();
     void Draw();
+    void  SetPlayerCell(int PlayerX,int Playery);//obtiene la cordenas del player y actualiza el mapa
+protected:
+    void LoadMapFromFile();
 };
 #endif //JUEGOCPLUSPLUS_GAMEMAP_H

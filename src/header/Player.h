@@ -7,9 +7,11 @@ public:
     Player();
     // virtual ~Player();
     void CallInput(); //el joystick
-
-protected:
     int x,y;
+protected:
+    //para que sean protecte tengo que hacer sus get and set
+    //int x,y;
+
 private:
 
 };

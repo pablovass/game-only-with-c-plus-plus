@@ -20,22 +20,22 @@ void Player::CallInput() {
     cin >>UserInput;
     switch (UserInput) {
         case 'w':
-            y=y+1;
-            cout<<"el jugador se va a mover hacia arriba"<<endl;
+            y=y-1;
+          //  cout<<"el jugador se va a mover hacia arriba"<<endl;
             break;
         case 'a':
             x--;
-            cout<<"el jugador se va a mover hacia esquierda"<<endl;
+            //cout<<"el jugador se va a mover hacia esquierda"<<endl;
             break;
         case 's':
-            y--;
-            cout<<"el jugador se va a mover hacia abajo"<<endl;
+            y++;
+            //cout<<"el jugador se va a mover hacia abajo"<<endl;
             break;
         case 'd':
             x++;
-            cout<<"el jugador se va a mover hacia derecha"<<endl;
+            //cout<<"el jugador se va a mover hacia derecha"<<endl;
             break;
     }
-    cout << "MI JUGADOR ESTA EN LAS CORDENADAS "<<x<<", "<<y<<endl;
+   // cout << "MI JUGADOR ESTA EN LAS CORDENADAS "<<x<<", "<<y<<endl;
 }
 

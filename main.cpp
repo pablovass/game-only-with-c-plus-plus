@@ -12,6 +12,9 @@ int main() {
     while (isGameOver == false){
         //aqui es el loop del juego
         Hero.CallInput();
+        //actualizamos la info del hero
+        Map.SetPlayerCell(Hero.x,Hero.y);
+        //aqui dibujamos el jugador
         Map.Draw();
     }
     return 0;
