@@ -4,12 +4,16 @@
 #include "src/header/MapCell.h"
 using  namespace std;
 int main() {
-    bool isGameOver = false;
-    GameMap Map;
-    Player Hero;
 
-    cout<< "aca se inicia el juego"<<endl;
-    while (isGameOver == false){
+
+    Player Hero;
+    GameMap Map;
+    Map.DrawIntro();
+
+    Map.Draw();
+
+    while (Map.isGameOver == false){
+        cout<<"introduce el comando de movimiento 'w' 's' 'a' 'd'   "<<endl;
         //aqui es el loop del juego
         Hero.CallInput();
         if (Map.SetPlayerCell(Hero.x,Hero.y) )

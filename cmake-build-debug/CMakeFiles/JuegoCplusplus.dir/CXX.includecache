@@ -26,18 +26,6 @@ fstream
 string
 -
 
-D:/DEVELOP/PracticaCPlusPlus/Cgame/JuegoCplusplus/src/MapCell.cpp
-iostream
--
-header/MapCell.h
-D:/DEVELOP/PracticaCPlusPlus/Cgame/JuegoCplusplus/src/header/MapCell.h
-
-D:/DEVELOP/PracticaCPlusPlus/Cgame/JuegoCplusplus/src/Player.cpp
-iostream
--
-header/Player.h
-D:/DEVELOP/PracticaCPlusPlus/Cgame/JuegoCplusplus/src/header/Player.h
-
 D:/DEVELOP/PracticaCPlusPlus/Cgame/JuegoCplusplus/src/header/GameMap.h
 iostream
 -
