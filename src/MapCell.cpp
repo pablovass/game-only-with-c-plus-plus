@@ -8,5 +8,12 @@
 using  namespace  std;
 
 MapCell::MapCell() {
-id=0;
+    id=0;
+}
+bool MapCell::IsBlocked() {
+    if(id=='1'){
+        return  true;
+    }else{
+        return false;
+    }
 }

@@ -10,7 +10,7 @@ public:
     MapCell cells [15][10];
      GameMap();
     void Draw();
-    void  SetPlayerCell(int PlayerX,int Playery);//obtiene la cordenas del player y actualiza el mapa
+    bool SetPlayerCell(int PlayerX,int Playery);//obtiene la cordenas del player y actualiza el mapa
 protected:
     void LoadMapFromFile();
 };

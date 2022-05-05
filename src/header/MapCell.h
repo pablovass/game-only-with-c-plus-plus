@@ -7,5 +7,7 @@ class MapCell{
 public:
     MapCell();
     char id;
+
+    bool IsBlocked();
 };
 #endif //JUEGOCPLUSPLUS_MAPCELL_H

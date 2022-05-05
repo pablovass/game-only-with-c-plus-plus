@@ -22,16 +22,22 @@ void GameMap::Draw()
     }
 }
 
-void GameMap::SetPlayerCell(int PlayerX,int PlayerY)
+bool GameMap::SetPlayerCell(int PlayerX,int PlayerY)
 {
-if(PlayerCell!=NULL){
-    PlayerCell->id = 0 ;
-}
-    PlayerCell=&cells[PlayerY][PlayerX];
-    PlayerCell->id = '3';
-//cout <<"las cordenas del jugador estan en: "<<PlayerX<<","<<Playery<<endl;
+     if(cells[PlayerY][PlayerX].IsBlocked()==false){
+         if(PlayerCell!=NULL){
+             PlayerCell->id = 0 ;
+         }
+         PlayerCell=&cells[PlayerY][PlayerX];
+         PlayerCell->id = '3';
+            //cout <<"las cordenas del jugador estan en: "<<PlayerX<<","<<Playery<<endl;
+         return  true;
+     }else{
+         return false;
+     }
 
-}
+     }
+
 
 /*
  * void GameMap::LoadMapFromFile()
@@ -80,5 +86,7 @@ void GameMap::LoadMapFromFile(){
     }
 
 }
+
+
 
 
