@@ -39,7 +39,6 @@ bool GameMap::SetPlayerCell(int PlayerX,int PlayerY)
              }
              PlayerCell=&cells[PlayerY][PlayerX];
              PlayerCell->id = '3';
-             //cout <<"las cordenas del jugador estan en: "<<PlayerX<<","<<Playery<<endl;
          }
 
          return  true;
@@ -48,24 +47,6 @@ bool GameMap::SetPlayerCell(int PlayerX,int PlayerY)
      }
 
      }
-
-
-/*
- * void GameMap::LoadMapFromFile()
-{
-     ofstream FileCreated("Map.txt");
-    if (FileCreated.is_open()){
-    }        else{
-        cout<<"FATAL ERROR: MAP FILE COULD NOT BE CREATED!"<<endl;
-
-    }
-    string  line;
-    ifstream MyFile("Map.txt");
-    if (MyFile.is_open()){
-    }        else{
-            cout<<"FATAL ERROR: MAP FILE COULD NOT BE LOADED!"<<endl;
-
-}    }*/
 void GameMap::DrawIntro() {
     string  line;
     ifstream MyFile("Intro.txt");
@@ -90,14 +71,11 @@ void GameMap::DrawIntro() {
 void GameMap::LoadMapFromFile(){
 
     string  line;
-    int row = 0; // va decir en que linea estoy
+    int row = 0; 
     ifstream MyFile("Map.txt");
 
     if (MyFile.is_open()) {
-        //cout<<"prueva de dibujado line"<<endl;
-
         while (getline(MyFile, line)) {
-          //  cout<<line<<endl; no quiero que lo dibuje
             for (int p = 0; p < line.length(); p = p + 1) {
                 if (line[p]=='0')
                 {
@@ -108,7 +86,6 @@ void GameMap::LoadMapFromFile(){
             }
            row++;
         }
-        // cout<<" FINAL prueva de dibujado line"<<endl;
     }
     else
     {
@@ -127,7 +104,6 @@ void GameMap::DrawVictory() {
         {
             cout<<line<<endl;
         }
-        // solo quiero pausar un poco el juego
         cin >> line;
     }
     else
@@ -137,11 +113,3 @@ void GameMap::DrawVictory() {
     }
 
 }
-
-
-
-
-
-
-
-

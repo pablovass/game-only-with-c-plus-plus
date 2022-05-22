@@ -13,9 +13,9 @@ public:
     void DrawIntro();
     void Draw();
     void LoadMapFromFile();
-    bool SetPlayerCell(int PlayerX,int Playery);//obtiene la cordenas del player y actualiza el mapa
+    bool SetPlayerCell(int PlayerX,int Playery);
 protected:
 
     void DrawVictory();
 };
-#endif //JUEGOCPLUSPLUS_GAMEMAP_H
+#endif 
