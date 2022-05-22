@@ -1,0 +1,3 @@
+D:/DEVELOP/PracticaCPlusPlus/GAME_BOOK/Beginning Cpp Through Game Programming/chapter2/08/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+D:/DEVELOP/PracticaCPlusPlus/GAME_BOOK/Beginning Cpp Through Game Programming/chapter2/08/cmake-build-debug/CMakeFiles/08.dir
+D:/DEVELOP/PracticaCPlusPlus/GAME_BOOK/Beginning Cpp Through Game Programming/chapter2/08/cmake-build-debug/CMakeFiles/edit_cache.dir
